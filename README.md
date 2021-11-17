@@ -18,4 +18,4 @@ print(ext) # 39-80*26-55
 print(eval(ext)) # -2096
 ```
 Pretty self-explanatory, i suppose.
-I will explain more of this package later.
+I will explain more about it later.
