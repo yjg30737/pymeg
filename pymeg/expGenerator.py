@@ -1,11 +1,11 @@
 import random
 
-from pyArithOpGen.arithmeticOperatorStruct import ArithmeticOperatorStruct
+from pymeg.expStruct import ExpStruct
 
 
-class ArithmeticOperatorGenerator:
+class ExpGenerator:
     @staticmethod
-    def get_problem(problem: ArithmeticOperatorStruct):
+    def get_problem(problem: ExpStruct):
         rows = problem.get_op()
         eq = ''
         op_dict = problem.op_dict

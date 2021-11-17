@@ -1,7 +1,7 @@
 from abc import ABCMeta
 
 
-class AbstractArithmeticOperatorStruct(metaclass=ABCMeta):
+class AbstractExpStruct(metaclass=ABCMeta):
     PLUS = 0
     MINUS = 1
     MULTIPLY = 2
