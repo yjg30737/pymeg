@@ -1,5 +1,5 @@
 # pymeg
-Simple mathematical expression generator
+Python mathematical expression generator
 
 ## Usage
 ```python
