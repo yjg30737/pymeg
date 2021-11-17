@@ -15,3 +15,6 @@ class AbstractExpStruct(metaclass=ABCMeta):
     max = 10
 
     op_dict = {PLUS: '+', MINUS: '-', MULTIPLY: '*', DIVIDE: '/'}
+
+    def __init__(self):
+        raise NotImplementedError('abstract base class')
