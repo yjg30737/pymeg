@@ -37,7 +37,7 @@ get_op() -> self.__op_lst # get the operators to be used as list of AbstractExpS
 
 set_oper_cnt(cnt) # set the number of operands of expression to be generated.
 
-set_min(min_) # set minimal operand's digit to used.
+set_min(min_) # set minimal operand's integer to used.
 
 set_max(max_) # set maximum
 ```
