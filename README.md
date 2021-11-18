@@ -3,24 +3,61 @@
 ## Table of Contents
 * [General Info](#general-info)
 * [Class Overview](#class-overview)
+* [Method Overview](#method-overview)
 * [Setup](#setup)
-* [Usage](#usage)
+* [Overall Example](#overall-example)
 
 ## General Info
 Python mathematical expression generator
 
 ## Class Overview
+* AbstractExpStruct
+
+Abstract class of ExpStruct. 
+
+This class has four constants.
+```python
+AbstractExpStruct.PLUS = 0
+AbstractExpStruct.MINUS = 1
+AbstractExpStruct.MULTIPLY = 2
+AbstractExpStruct.DIVIDE = 3
+```
+
 * ExpStruct
-Class which can store the rules of expression
+
+Class which can store the rules of expression. inherits the AbstractExpStruct.
+
+ExpStruct has methods like below.
+```python
+set_op(lst) # set the operators to be used to expression to generate as AbstractExpStruct's constant. 
+# For example, if you want to use only plus and minus then write like this
+# expStruct.set_op([AbstractExpStruct.PLUS, AbstractExpStruct.Minus])
+
+get_op() -> self.__op_lst # get the operators to be used as list of AbstractExpStruct's constant.
+
+set_oper_cnt(cnt) # set the number of operands of expression to be generated.
+
+set_min(min_) # set minimal operand's digit to used.
+
+set_max(max_) # set maximum
+```
+
 * ExpGenerator
+
 Class which generate the randomized expression with given ExpStruct instance
+Using `get_problem` static method to generate the expression. Argument is `ExpStruct`.
+Result is string-typed mathematical expression.
+```
+problem = ExpStruct()
+ExpGenerator.get_problem(problem)
+```
 
 ## Setup
 ```
 $ pip install git+https://github.com/yjg30737/pymeg.git
 ```
 
-## Usage
+## Overall Example
 ```python
 from pymeg.expGenerator import ExpGenerator
 from pymeg.expStruct import ExpStruct
@@ -36,5 +73,4 @@ ext = ExpGenerator.get_problem(problem)
 print(ext) # 39-80*26-55
 print(eval(ext)) # -2096
 ```
-Pretty self-explanatory, i suppose.
-I will explain more about it later.
+
