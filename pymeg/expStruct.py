@@ -8,18 +8,6 @@ class ExpStruct(AbstractExpStruct):
                          AbstractExpStruct.MULTIPLY,
                          AbstractExpStruct.DIVIDE]
 
-    def set_title(self, title):
-        self.__title = title
-
-    def set_type(self, type):
-        self.__type = type
-
-    def get_title(self):
-        return self.__title
-
-    def get_type(self):
-        return self.__type
-
     def set_op(self, lst):
         self.__op_lst = lst
 
