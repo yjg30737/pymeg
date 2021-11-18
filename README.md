@@ -3,7 +3,6 @@
 ## Table of Contents
 * [General Info](#general-info)
 * [Class Overview](#class-overview)
-* [Method Overview](#method-overview)
 * [Setup](#setup)
 * [Overall Example](#overall-example)
 
