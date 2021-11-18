@@ -1,5 +1,24 @@
 # pymeg
+
+## Table of Contents
+* [General Info](#general-info)
+* [Class Overview](#class-overview)
+* [Setup](#setup)
+* [Usage](#usage)
+
+## General Info
 Python mathematical expression generator
+
+## Class Overview
+* ExpStruct
+Class which can store the rules of expression
+* ExpGenerator
+Class which generate the randomized expression with given ExpStruct instance
+
+## Setup
+```
+$ pip install git+https://github.com/yjg30737/pymeg.git
+```
 
 ## Usage
 ```python
