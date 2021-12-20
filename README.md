@@ -74,3 +74,12 @@ print(ext)
 print(eval(ext))
 ```
 
+## Result
+Note: Problems will generate randomly depending on operation count or some sort.
+```python
+54+25-54*9
+6*6-31/3
+2/4*8/3
+9*3*6/2
+81.0
+```
