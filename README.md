@@ -36,9 +36,8 @@ get_op() -> self.__op_lst # get the operators to be used as list of AbstractExpS
 
 set_oper_cnt(cnt) # set the number of operands of expression to be generated.
 
-set_min(min_) # set minimal operand's integer to used.
+set_range(min_, max_, types: list) # set min, max number to use of types(plus, minus ...).
 
-set_max(max_) # set maximum
 ```
 
 * ExpGenerator
@@ -53,23 +52,25 @@ ExpGenerator.get_problem(problem)
 
 ## Setup
 ```
-$ pip install git+https://github.com/yjg30737/pymeg.git
+pip3 install git+https://github.com/yjg30737/pymeg.git --upgrade
 ```
 
-## Overall Example
+## Example
 ```python
+
 from pymeg.expGenerator import ExpGenerator
 from pymeg.expStruct import ExpStruct
 
 problem = ExpStruct()
 problem.set_oper_cnt(4)
-problem.set_min(10)
-problem.set_max(100)
-print(ExpGenerator.get_problem(problem)) # 84-64-80*22
-print(ExpGenerator.get_problem(problem)) # 31/32+36-66
-print(ExpGenerator.get_problem(problem)) # 15/61/54/49
+problem.set_range(20, 100, [ExpStruct.PLUS, ExpStruct.MINUS])
+problem.set_range(2, 10, [ExpStruct.MULTIPLY])
+problem.set_range(2, 4, [ExpStruct.DIVIDE])
+print(ExpGenerator.get_problem(problem))
+print(ExpGenerator.get_problem(problem))
+print(ExpGenerator.get_problem(problem))
 ext = ExpGenerator.get_problem(problem)
-print(ext) # 39-80*26-55
-print(eval(ext)) # -2096
+print(ext)
+print(eval(ext))
 ```
 
