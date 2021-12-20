@@ -75,7 +75,7 @@ print(eval(ext))
 ```
 
 ## Result
-Note: Problems will generate randomly depending on operation count or some sort.
+Note: Problem will be generated randomly depending on operation count set by user or anything like that.
 ```python
 54+25-54*9
 6*6-31/3
