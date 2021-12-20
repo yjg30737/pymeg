@@ -11,8 +11,17 @@ class AbstractExpStruct(metaclass=ABCMeta):
     oper_max_cnt = 8
     oper_cnt = 2
 
-    min = 1
-    max = 10
+    plus_min = 1
+    plus_max = 10
+
+    minus_min = 1
+    minus_max = 10
+
+    multiply_min = 1
+    multiply_max = 10
+
+    divide_min = 1
+    divide_max = 10
 
     op_dict = {PLUS: '+', MINUS: '-', MULTIPLY: '*', DIVIDE: '/'}
 

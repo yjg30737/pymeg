@@ -17,8 +17,19 @@ class ExpStruct(AbstractExpStruct):
     def set_oper_cnt(self, cnt):
         ExpStruct.oper_cnt = cnt
 
-    def set_min(self, min_):
-        ExpStruct.min = min_
-
-    def set_max(self, max_):
-        ExpStruct.max = max_
+    def set_range(self, min_, max_, types: list):
+        for type in types:
+            if type == ExpStruct.PLUS:
+                ExpStruct.plus_min = min_
+                ExpStruct.plus_max = max_
+            elif type == ExpStruct.MINUS:
+                ExpStruct.minus_min = min_
+                ExpStruct.minus_max = max_
+            elif type == ExpStruct.MULTIPLY:
+                ExpStruct.multiply_min = min_
+                ExpStruct.multiply_max = max_
+            elif type == ExpStruct.DIVIDE:
+                ExpStruct.divide_min = min_
+                ExpStruct.divide_max = max_
+            else:
+                continue
