@@ -52,9 +52,7 @@ ExpGenerator.get_problem(problem)
 ```
 
 ## Setup
-```
-pip3 install git+https://github.com/yjg30737/pymeg.git --upgrade
-```
+`pip3 install pymeg`
 
 ## Example
 ### Code Sample
