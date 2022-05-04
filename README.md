@@ -5,7 +5,7 @@ I'm making the <a href="https://pymeg.readthedocs.io/en/latest/">detailed docume
 * [General Info](#general-info)
 * [Class Overview](#class-overview)
 * [Setup](#setup)
-* [Overall Example](#overall-example)
+* [Example](#example)
 
 ## General Info
 Python mathematical expression generator
@@ -57,6 +57,7 @@ pip3 install git+https://github.com/yjg30737/pymeg.git --upgrade
 ```
 
 ## Example
+### Code Sample
 ```python
 
 from pymeg.expGenerator import ExpGenerator
@@ -75,8 +76,8 @@ print(ext)
 print(eval(ext))
 ```
 
-## Result
-Note: Problem will be generated randomly depending on operand count set by user or anything like that.
+### Result
+Note: Problem will be generated randomly depending on operand count set by user.
 ```python
 54+25-54*9
 6*6-31/3
