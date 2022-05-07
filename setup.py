@@ -15,7 +15,7 @@ setup(
     author_email='yjg30737@gmail.com',
     license='MIT',
     packages=['pymeg'],
-    description='Python Mathematical Expression Generator',
+    description='Python mathematical expression generator',
     url='https://github.com/yjg30737/pymeg.git',
     long_description_content_type='text/markdown',
     long_description=long_description
