@@ -1,5 +1,4 @@
 # pymeg
-I'm making the <a href="https://pymeg.readthedocs.io/en/latest/">detailed documentation</a> for this.
 
 ## Table of Contents
 * [General Info](#general-info)
