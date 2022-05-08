@@ -51,7 +51,7 @@ ExpGenerator.get_problem(problem)
 ```
 
 ## Setup
-`pip3 install pymeg`
+`python -m pip install pymeg`
 
 ## Example
 ### Code Sample
